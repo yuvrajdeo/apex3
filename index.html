@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Development Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Advanced Web Development Platform</h1>
+            <p>Master Responsive Design, Interactive JavaScript & API Integration</p>
+        </header>
+
+        <section class="section">
+            <h2>📱 1. Responsive Design</h2>
+            <p>This section adapts to different screen sizes. Resize your browser to see the layout and background color of the boxes change!</p>
+            
+            <div class="responsive-demo">
+                <div class="device-preview">
+                    <h3>Small Screen</h3>
+                    <div class="demo-box" id="demo-box-1">Single column layout for mobiles.</div>
+                </div>
+                <div class="device-preview">
+                    <h3>Medium Screen</h3>
+                    <div class="demo-box" id="demo-box-2">Two column layout for tablets.</div>
+                </div>
+                <div class="device-preview">
+                    <h3>Large Screen</h3>
+                    <div class="demo-box" id="demo-box-3">Three column layout for desktops.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🧠 2. Interactive JavaScript Quiz</h2>
+            <p>Test your web development knowledge with this interactive quiz!</p>
+            
+            <div class="quiz-container">
+                <div id="quiz-content">
+                    </div>
+
+                <div class="score-display" id="scoreDisplay" style="display: none;">
+                    </div>
+
+                <div class="quiz-controls" id="quizControls">
+                    <button class="btn" id="prevBtn" disabled>⬅️ Previous</button>
+                    <button class="btn" id="nextBtn" disabled>Next ➡️</button>
+                    <button class="btn" id="finishBtn" style="display: none;">🏁 Finish Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎠 3. Interactive Image Carousel</h2>
+            <p>Navigate through this beautiful carousel using the controls. It also auto-advances!</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-slides" id="carouselSlides">
+                    </div>
+                <button class="carousel-controls carousel-prev">❮</button>
+                <button class="carousel-controls carousel-next">❯</button>
+                <div class="carousel-indicators" id="carouselIndicators">
+                    </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🌐 4. API Data Fetching</h2>
+            <p>Fetch real-time data from external APIs and display it dynamically!</p>
+            
+            <div class="api-container">
+                <div class="api-controls">
+                    <button class="btn" id="fetchJokeBtn">😂 Get Random Joke</button>
+                    <button class="btn" id="fetchWeatherBtn">🌤️ Get Weather (Daltonganj)</button>
+                    <button class="btn" id="clearDataBtn">🗑️ Clear Data</button>
+                </div>
+                
+                <div class="data-display" id="dataDisplay">
+                    <div class="loading-text">Click a button above to fetch data from APIs!</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
